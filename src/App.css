@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&display=swap");
+
+* {
+  font-family: "Assistant", sans-serif;
+
+  margin: 0 auto;
+
+  /* colors */
+  --green: #e6fc83;
+  --blue: #7aa5f6;
+  --pink: rgba(229, 125, 121, 0.985);
+  --font: #727272;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.green {
+  height: 100vh;
+  background-color: var(--green);
+}
+
+.text {
+  padding-top: 10vh;
+
+  
+}
+
+.green p {
+  padding-left: 10%;
+  /* font-size: 5rem; */
+  color: var(--font);
+  font-weight: 400;
+  font-size: 5vw;
+}
+
+.links {
+  margin-top: 20vh;
+
+  display: flex;
+}
+
+.links a {
+  font-size: 46px;
+  text-decoration: none;
+  color: var(--font);
+
+  display: inline-flex;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .green p {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .green p {
+    font-size: 2.2rem;
+    margin-right: 4rem;
+  }
+
+  .links a{
+    font-size: 1rem;
+ /*    margin-top: -5rem; */
+  }
+}
+
+
+.blue {
+  height: 100vh;
+  background-color: var(--blue);
+  text-align: center;
+  padding-top: 10vh;
+
+
+
+}
+
+.blue h1 {
+  color: var(--green);
+    padding-top: 7vh;
+    
+}
+
+.project-flex-box {
+/* border: 1px solid orange; */
+display: flex;
+justify-content: space-around;
+
+align-items: center;
+height: 25vh;
+margin-top: 20vh;
+width: 80vw;
+
+
+}
+
+.proj1, .proj2, .proj3{
+  border: 1px solid black;
+  width: 15rem;
+  height: 12rem;
+
+}
+
+.pink {
+  height: 100vh;
+  background-color: var(--pink);
+}

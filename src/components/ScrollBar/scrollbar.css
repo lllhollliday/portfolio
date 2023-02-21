@@ -1,0 +1,23 @@
+body {
+  --bar: #fcce9a;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  }
+
+* {
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  border-radius: 6px;
+  background: var(--bar);
+  transform-origin: 0%;
+}
