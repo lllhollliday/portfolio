@@ -29,7 +29,7 @@ function App() {
 
       <h1>projects</h1>
       <div className="project-flex-box">
-        <div className="proj1">proj 1</div>
+        <div className="proj1"></div>
 
         <div className="proj2">proj 2</div>
         <div className="proj3">proj 3</div>

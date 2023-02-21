@@ -23,8 +23,6 @@
 
 .text {
   padding-top: 10vh;
-
-  
 }
 
 .green p {
@@ -49,63 +47,90 @@
   display: inline-flex;
 }
 
-
-
 @media (max-width: 768px) {
-
   .green p {
     font-size: 5rem;
   }
 }
 
+@media (max-width: 428px) {
+  .green p {
+    font-size: 3rem;
+  }
+  .links a {
+    font-size: 2rem;
+    /*    margin-top: -5rem; */
+  }
+}
 @media (max-width: 375px) {
-
   .green p {
     font-size: 2.2rem;
     margin-right: 4rem;
   }
 
-  .links a{
-    font-size: 1rem;
- /*    margin-top: -5rem; */
+  .links a {
+    font-size: 1.5rem;
+    /*    margin-top: -5rem; */
   }
 }
-
 
 .blue {
   height: 100vh;
   background-color: var(--blue);
   text-align: center;
   padding-top: 10vh;
-
-
-
 }
 
 .blue h1 {
   color: var(--green);
-    padding-top: 7vh;
-    
+  padding-top: 7vh;
 }
 
 .project-flex-box {
-/* border: 1px solid orange; */
-display: flex;
-justify-content: space-around;
+  /* border: 1px solid orange; */
+  display: flex;
+  /* justify-content: space-around; */
 
-align-items: center;
-height: 25vh;
-margin-top: 20vh;
-width: 80vw;
+  align-items: center;
+  height: 25vh;
+  margin-top: 25vh;
+  width: 80vw;
 
-
+  gap: 3rem;
 }
 
-.proj1, .proj2, .proj3{
-  border: 1px solid black;
-  width: 15rem;
-  height: 12rem;
+@media (max-width: 768px) {
+  .project-flex-box {
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    margin-top: 3rem;
+  }
+}
 
+.proj1,
+.proj2,
+.proj3 {
+  border: 1px solid black;
+ width: 25rem;
+
+  height: 18rem;
+}
+
+.proj1 {
+  background: url("./assets/pantry.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .proj1,
+  .proj2,
+  .proj3 {
+    height: 20rem;
+    width: 25rem;
+  }
 }
 
 .pink {
