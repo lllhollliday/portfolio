@@ -2,6 +2,8 @@ import "./emailForm.css"
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 
+import { useState } from "react"
+
 const EmailForm = () => {
   const form = useRef()
 
@@ -27,6 +29,15 @@ const EmailForm = () => {
       e.target.reset()
   }
 
+  const [buttonText, setButtonText] = useState('send');
+
+  const handleClick = () => {
+    setButtonText('thanks!');
+
+    
+  }
+  
+
   return (
     <section>
       <div className="container">
@@ -38,7 +49,7 @@ const EmailForm = () => {
 
           <textarea name="message" id="textArea" /* cols="30" */ /* rows="10" */></textarea>
 
-          <button>send</button>
+          <button onClick={handleClick}>{buttonText}</button>
         </form>
       </div>
     </section>
