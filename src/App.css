@@ -38,8 +38,6 @@
 .green p {
   padding-left: 8%;
 
-  /* font-size: 5rem; */
-/*   color: var(--font); */
   font-weight: 400;
   font-size: 5vw;
 }
@@ -53,19 +51,17 @@
 .links a {
   font-size: 46px;
   text-decoration: none;
-/*   color: var(--font); */
+
 
   display: inline-flex;
 
   position: relative;
 }
 
-/* .links a,
-a:visited,
-a:hover,
-a:active{
-color: var(--font);
-} */
+.links a:link{
+  color: inherit;
+}
+
 .links a::after {
   content: "";
   position: absolute;
