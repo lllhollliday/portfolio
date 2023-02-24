@@ -51,9 +51,14 @@ input, textarea{
 
 input:focus, textarea:focus{
     background-color: var(--input-focus);
- /*    color: var(--font); */
+
 }
 
+input::placeholder, textarea::placeholder{
+
+    color: var(--button-form)
+/*     opacity: 1; */
+}
 
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,

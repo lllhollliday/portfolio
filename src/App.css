@@ -13,9 +13,9 @@
   --pink: rgba(229, 125, 121, 0.985);
   --pink-o: rgba(243, 139, 136, 0.903);
   --font: #727272;
-  --font-form: #352a2a;
+  --font-form: #383636;
   --button-form: #483d3d;
-  --input: rgba(144, 135, 135, 0.3);
+  --input: rgba(144, 135, 135, 0.419);
   --input-focus: rgba(134, 127, 127, 0.389);
   --input-pink: rgba(255, 72, 72, 0.249);
 }
