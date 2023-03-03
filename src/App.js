@@ -25,23 +25,7 @@ function App() {
       <div id="projects" className="blue">
         <h1>projects</h1>
 
-        <div className="project-flex-box">
-          {/*         <div>
-            <img src={pantry} alt="" />
-            <div className="text-container">
-              <h3>title</h3>
-              <p>appear on hover</p>
-            </div>
-          </div>
-          <div>
-            <img src={todo} alt="" />
-            <p>appear on hover</p>
-          </div>
-          <div>
-            <img src={wip} alt="" />
-            <p>appear on hover</p>
-          </div>
- */}
+    {    <div className="project-flex-box">
           <a href="https://pantry-6ajz.onrender.com/">
             <div className="project">
               <img src={pantry} alt="Pantry Website Homepage" />
@@ -72,7 +56,7 @@ function App() {
               <p>Freelance project. Building a site for a wellness company.</p>
             </div>
           </div>
-        </div>
+        </div>}
       </div>
       <div id="contacts" className="pink">
         <EmailForm />

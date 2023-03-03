@@ -25,6 +25,11 @@
   display: none;
 }
 
+/* .App {
+  display: flex;
+  flex-direction: column;
+} */
+
 .green {
   height: 100vh;
   background-color: var(--green);
@@ -52,13 +57,12 @@
   font-size: 46px;
   text-decoration: none;
 
-
   display: inline-flex;
 
   position: relative;
 }
 
-.links a:link{
+.links a:link {
   color: inherit;
 }
 
@@ -109,24 +113,24 @@
 }
 
 .blue {
-  height: 105vh;
+  height: 100vh;
+  padding-top: 1%;
   background-color: var(--blue);
   text-align: center;
 
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+
   flex-direction: column;
   /*  padding-top: 10vh; */
 }
 
 .blue h1 {
   color: var(--green);
-  /*   padding-top: 5vh; */
+  /*   max-height: fit-content; */
   font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: 2px;
- /*  margin-top: -5%; */
 }
 
 .project-flex-box {
@@ -192,29 +196,25 @@ a:active .text {
   color: var(--green);
 }
 
-/* .project .text a:hover {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-  -webkit-mask-size: 200%;
-  animation: shine 2s infinite;
-}
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-  
-  to {
-    -webkit-mask-position: -50%;
-  }
-} */
 .project:hover img {
   opacity: 0.1;
 }
 
 @media (max-width: 768px) {
+  .blue {
+    height: 160vh;
+
+  }
   .project-flex-box {
+        max-height: 100%;
+
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    /*   margin-top: 4rem; */
+  }
+
+  .blue h1 {
+    padding: 15%;
   }
 }
 
