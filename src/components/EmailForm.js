@@ -41,7 +41,7 @@ const EmailForm = () => {
   return (
     <section>
       <div className="container">
-        <h2>contact</h2>
+        <h2>CONTACT</h2>
         <form ref={form} onSubmit={sendEmail} action="">
           <input type="text" placeholder="name" name="user_name" required />
 
