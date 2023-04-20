@@ -5,6 +5,7 @@ import todo from "../src/assets/todo.png"
 import wip from "../src/assets/wip.png"
 import ScrollBar from "./components/ScrollBar/ScrollBar.js"
 import EmailForm from "./components/EmailForm.js"
+import Landing from "./pages/Landing"
 
 function App() {
   const myRef = useRef()
@@ -14,25 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      {" "}
-      <ScrollBar />
-      <div className="green">
-        <nav className="links">
-          <ul>
-            <li>
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#contacts">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
 
-        <div className="text">
-          <p>LUCY HOLLIDAY</p>
-          <p>FRONTEND DEVELOPER</p>
-        </div>
-      </div>
+      <ScrollBar />
+{<Landing/>}
       <div id="projects" className="blue">
         <h1>PROJECTS</h1>
         {

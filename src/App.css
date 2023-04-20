@@ -30,6 +30,8 @@
   display: none;
 }
 
+
+
 /* Intro Page */
 
 .green {
@@ -41,7 +43,6 @@
 /* Nav Bar */
 
 .links {
- 
 
   list-style-type: none;
 
@@ -112,23 +113,27 @@
 /* Projects page */
 .blue {
   min-height: 100vh;
-  padding-top: 1%;
+  overflow-y: auto;
+
   background-color: var(--blue);
   text-align: center;
 
   display: flex;
-  justify-content: space-evenly;
-
+/*   justify-content: space-evenly;
+ */
   flex-direction: column;
-  /*  padding-top: 10vh; */
+
 }
 
 .blue h1 {
   color: var(--green);
-  /*   max-height: fit-content; */
+
   font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: 2px;
+/* 
+  border: 1px solid red; */
+  padding-top: 2rem;
 }
 
 .project-flex-box {
@@ -136,11 +141,17 @@
 
   align-items: center;
   justify-content: center;
-  margin-top: -5%;
+/*   margin-top: -5%;
   margin-bottom: 5%;
   margin-left: 7%;
-  margin-right: 7%;
+  margin-right: 7%; */
   gap: 3rem;
+
+  flex-direction: column;
+
+  padding: 1.5rem;
+  margin-top: 1rem;
+
 }
 
 .project {
@@ -218,7 +229,7 @@ a:active .text {
 
 img {
   max-width: 100%;
-  border-radius: 10px;
+/*   border-radius: 10px; */
   box-shadow: -4px 3px 5px rgba(171, 171, 171, 0.3);
   -webkit-box-shadow: -4px 3px 5px rgba(171, 171, 171, 0.3);
   -moz-box-shadow: -4px 3px 5px rgba(171, 171, 171, 0.3);

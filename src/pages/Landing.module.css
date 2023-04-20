@@ -1,0 +1,78 @@
+/* Intro Page */
+
+.green {
+    height: 100vh;
+    background-color: var(--green);
+    color: var(--font);
+  }
+  
+  /* Nav Bar */
+  
+  .links {
+   
+  
+    list-style-type: none;
+  
+    width: 100%;
+  }
+  
+  .links ul {
+  
+    list-style: none;
+    padding-right: 1rem;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .links li {
+    display: inline-block;
+  }
+  
+  .links a {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 1.1rem;
+    display: block;
+  }
+  
+  /* Underline animation on Nav elements */
+  
+  .links a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--font);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* Page 1 title text */
+  
+  .text {
+    position: relative;
+    top: 5em;
+  }
+  .text :nth-child(1) {
+    font-size: 1.7rem;
+    /*   max-width: 40px;
+   */
+  }
+  
+  .text :nth-child(2) {
+    font-size: 3.5rem;
+    /*   max-width: 40px;
+   */
+  }
+  
+  .green p {
+    padding-left: 8%;
+  }
